@@ -1,0 +1,26 @@
+version: '3'
+services:
+  fastapi:
+    build: BackEnd/
+    image: ddiazva312/object_classification:i1
+    ports: 
+      - 8080:80
+    volumes:
+      - ../models:/app/models
+      - ../config:/app/config
+      - ../logs:/app/logs
+    container_name: fastapi
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #       - capabilities: [gpu]
+
+  streamlit:
+    build: FrontEnd/
+    image: ddiazva312/object_classification:i2
+    depends_on:
+      - fastapi
+    ports: 
+        - 5000:5000
+    container_name: streamlit

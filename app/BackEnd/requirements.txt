@@ -1,0 +1,6 @@
+Pillow
+boto3
+pandas 
+PyYAML
+fastapi[all]
+uvicorn
