@@ -109,17 +109,20 @@ Open your terminal and navigate to the project directory.
 
    **Setting dolowload models** 
    
-      To run the application, download the required model files from this Google Drive [link](https://www.google.com "Google's Homepage") and place them in the models/ directory.
+      * To run the application, download the required model files from this Google Drive [link](https://www.google.com "Google's Homepage") and place them in the models/ directory.
 
       ├── models/ <- 📂 Model files [.h5, .pkl, .pt] - pre-trained weight files, snapshots, checkpoints
 
 
    **Docker Setup** 
-      Docker is required to run the application. Follow these steps: 
+   
+      * Docker is required to run the application. Follow these steps: 
+      
       ```
          Install Docker if it's not already installed on your system.
       ```
-      Navigate to the /app directory in the terminal.
+      * Navigate to the /app directory in the terminal.
+      
       ```
          docker-compose up --build
       ```
@@ -132,7 +135,7 @@ http://localhost:8080/docs
 ```
 
 <p align="center">
-  <img src="Docs/fastapi.png" alt="Sheet" style="width:100%">
+  <img src="Docs/fastapi.PNG" alt="Sheet" style="width:100%">
 </p>
 
 ### Streamlit
@@ -143,7 +146,7 @@ http://localhost:5000/
 <div class="row">
   <div class="column">
     <p align="center">
-      <img src="Docs/streamlit.png" alt="Sheet" style="width:50%">
+      <img src="Docs/streamlit.PNG" alt="Sheet" style="width:50%">
     </p>
   </div>
 </div>
