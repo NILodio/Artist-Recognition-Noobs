@@ -114,18 +114,23 @@ Open your terminal and navigate to the project directory.
       ├── models/ <- 📂 Model files [.h5, .pkl, .pt] - pre-trained weight files, snapshots, checkpoints
 
 
-   **Docker Setup** 
-   
-      * Docker is required to run the application. Follow these steps: 
-      
-      ```
-         Install Docker if it's not already installed on your system.
-      ```
-      * Navigate to the /app directory in the terminal.
-      
-      ```
-         docker-compose up --build
-      ```
+   **Docker Setup**
+
+       ```
+    * Docker is required to run the application. Follow these steps: 
+    * Install Docker if it's not already installed on your system.
+    * Navigate to the /app directory in the terminal.
+    * flake8-tabs                  <- Tab (and Spaces) Style Checker for flake8
+    * black                        <- Code formatter
+    * mypy                         <- Static type checker
+    * pre-commit                   <- A framework for managing and maintaining multi-language pre-commit hooks.
+    * pdoc3                        <- Generate API documentation for Python projects
+    * mkdocs                       <- Generate Project documentation for Python projects
+    ```
+  
+    ```
+       docker-compose up --build
+    ```
 
 
 ### Fast-Api
