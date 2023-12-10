@@ -140,7 +140,7 @@ http://localhost:8080/docs
 ```
 
 <p align="center">
-  <img src="Docs/fastapi.PNG" alt="Sheet" style="width:100%">
+  <img src="Docs/fastapi.jpg" alt="Sheet" style="width:100%">
 </p>
 
 ### Streamlit
@@ -151,7 +151,7 @@ http://localhost:5000/
 <div class="row">
   <div class="column">
     <p align="center">
-      <img src="Docs/streamlit.PNG" alt="Sheet" style="width:50%">
+      <img src="Docs/streamlit.jpg" alt="Sheet" style="width:50%">
     </p>
   </div>
 </div>
