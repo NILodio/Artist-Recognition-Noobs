@@ -5,6 +5,11 @@ data/**
 !**/
 !.gitkeep
 
+models/**
+!**/
+!models.py
+!.gitkeep
+
 logs/**
 !**/
 !.gitkeep
