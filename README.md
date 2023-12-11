@@ -116,22 +116,26 @@ Open your terminal and navigate to the project directory.
 
    **Docker Setup**
 
-       ```
+   ```
     * Docker is required to run the application. Follow these steps: 
     * Install Docker if it's not already installed on your system.
     * Navigate to the /app directory in the terminal.
-    * flake8-tabs                  <- Tab (and Spaces) Style Checker for flake8
-    * black                        <- Code formatter
-    * mypy                         <- Static type checker
-    * pre-commit                   <- A framework for managing and maintaining multi-language pre-commit hooks.
-    * pdoc3                        <- Generate API documentation for Python projects
-    * mkdocs                       <- Generate Project documentation for Python projects
-    ```
-  
+   ```
+   **Option 1 - 🐳 Docker build local**
+
     ```
        docker-compose up --build
     ```
 
+   🚨 If you encounter issues building the image, it likely indicates that you are missing some essential system packages for building.
+
+   **Option 2 - 🐳 Pull Image from [Docker](https://hub.docker.com/r/ddiazva312/object_classification)**
+   ```
+      docker pull ddiazva312/object_classification
+   ```
+   ```
+      docker-compose up
+   ```
 
 ### Fast-Api
 ```
@@ -140,7 +144,7 @@ http://localhost:8080/docs
 ```
 
 <p align="center">
-  <img src="Docs/fastapi.jpg" alt="Sheet" style="width:100%">
+  <img src="docs/fastapi.jpg" alt="Sheet" style="width:100%">
 </p>
 
 ### Streamlit
@@ -151,7 +155,7 @@ http://localhost:5000/
 <div class="row">
   <div class="column">
     <p align="center">
-      <img src="Docs/streamlit.jpg" alt="Sheet" style="width:50%">
+      <img src="docs/streamlit.jpg" alt="Sheet" style="width:50%">
     </p>
   </div>
 </div>
