@@ -101,7 +101,7 @@ Due to the complexity of the problems, the models were trained using Kaggle, as 
 * 🤩 Streamlit App 
 
 
-## 🛠️ App Local
+## 👽️ POC
 
 ### 🧑‍💻 Steps:
 
@@ -109,12 +109,17 @@ Open your terminal and navigate to the project directory.
 
    **Setting dolowload models** 
    
-      * To run the application, download the required model files from this Google Drive [link](https://www.google.com "Google's Homepage") and place them in the models/ directory.
+   🚨 To run the application, download the required model files from this Google Drive [link](https://drive.google.com/drive/folders/18rBBjrhTNR4eqVZpVhDtlPComDtRTceR?usp=sharing) and place them in the models/ directory.
 
-      ├── models/ <- 📂 Model files [.h5, .pkl, .pt] - pre-trained weight files, snapshots, checkpoints
-
-
-   **Docker Setup**
+   ```
+   .
+   ├── models/ <- 📂 Model files [.h5, .pkl, .pt] - pre-trained weight files, snapshots, checkpoints
+      ├── vgg19_001/                  <- 📂 Model [.h5]
+         ├── labels.json              <-  File [.json]
+         ├── model.h5                 <-  File [.h5]
+   ```
+   
+### 🐳 Docker
 
    ```
     * Docker is required to run the application. Follow these steps: 
@@ -123,9 +128,9 @@ Open your terminal and navigate to the project directory.
    ```
    **Option 1 - 🐳 Docker build local**
 
-    ```
-       docker-compose up --build
-    ```
+   ```
+      docker-compose up --build
+   ```
 
    🚨 If you encounter issues building the image, it likely indicates that you are missing some essential system packages for building.
 
